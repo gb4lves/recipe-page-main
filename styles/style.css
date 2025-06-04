@@ -25,29 +25,54 @@
 }
 
 h1, p, ul, h2, h3, hr, ol {
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 body {
-    background-color: var(--cor7);
+    background-color: var(--cor1);
     color: var(--cor3);
     font-family: var(--fonte2);
-    font-size: 16px;
+    font-size: 17px;
     
     height: 100vh;
 }
 
+.conteiner {
+    display: flex;
+    flex-flow: row wrap;
+}
 main {
-    background-color: var(--branco);
-
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    background-color: var(--branco);
 }
 
 section {
     padding: 30px;
-    max-width: 90%;
+}
+
+li::marker {
+    color: var(--cor5);
+    font-weight: 700;
+}
+
+ol > li::marker {
+    font-size: 1.1em;
+}
+
+ol, ul {
+}
+
+ol.olist {
+    list-style-position: outside;
+    padding-left: 20px;
+    text-align:justify
+}
+
+ol.olist li {
+    text-indent: 20px;
 }
 
 hr{
@@ -64,12 +89,29 @@ hr{
     background-color: var(--cor7);
     padding: 20px;
     border-radius: 10px;
+    width: 100%;
+    margin: auto;
 }
 
 .prep ul {
     list-style-position: inside;
     line-height: 2em;
+    text-indent: 20px;
 }
+
+.nutri > div {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.315);
+    padding: 10px;
+}
+
+.nutri > div > span.valor {
+    color: var(--cor5);
+    font-weight: 700;
+}
+
 
 article ul, ol {
     list-style-position: inside;
@@ -94,4 +136,9 @@ h2 {
 h3 {
     color: var(--cor6);
     font-size: 1.4em;
+}
+
+.attribution {
+    padding: 10px;
+    background-color: white;
 }
