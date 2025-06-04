@@ -1,20 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    /*  fontes  */
-    --fonte1: "Young Serif", serif;
-    --fonte2: "Outfit", sans-serif;
-    /* cores */
-    --branco: hsl(0, 0%, 100%);
-    --cor1: hsl(30, 54%, 90%);
-    --cor2: hsl(30, 18%, 87%);
-    --cor3: hsl(30, 10%, 34%);
-    --cor4: hsl(24, 5%, 18%);
-    --cor5: hsl(14, 45%, 36%);
-    --cor6: hsl(332, 51%, 32%);
-    --cor7: hsl(330, 100%, 98%);
-}
-
 @media screen and (min-width: 700px) {
     .conteiner {
         display: flex;
